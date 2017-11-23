@@ -13,11 +13,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Text Templates</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         Text Templates
     </header>
+    <main>
+        <div id="create-panel" class="card">
+            <input type="text" placeholder="Title" id="title" autofocus>
+            <br>
+            <textarea id="template-in" placeholder="Template"></textarea>
+            <br>
+            <button id="create-template-btn">Create</button>
+        </div>
+        <div id="templates-list">
+            <div class="template card">
+                <div class="template-title">Walkthrough</div>
+                <div class="template-body">Thanks for providing extensive walkthrough for the application {app-name}</div>
+            </div>
+        </div>
+    </main>
     
     <script src="text-templates.js"></script>
 </body>
